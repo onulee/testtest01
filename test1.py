@@ -4,3 +4,4 @@ sum = a+b
 #print("합계 : {}".format(sum))   
 print("합계 : %d" % (sum))   
 c=10
+d=20
