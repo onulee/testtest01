@@ -28,3 +28,11 @@ print("-"*20)
         
 print(counter)
 
+#------------------------------------------------
+from wordcloud import WordCloud
+
+wc = WordCloud(font_path='C:/workspace/NanumBarunGothic.ttf', 
+               background_color="white", width=1000, height=1000,max_words=100,max_font_size=300)
+
+wc.generate_from_frequencies(counter)
+wc.to_file('C:/workspace/rating.png')
